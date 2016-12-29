@@ -5,6 +5,7 @@
         <span class="card-date" data-ng-if="detail.job.dateLastPublished">{{'common.addedLabel' | i18n}} - {{detail.job.dateLastPublished | displayDate}}</span>
         <!-- TITLE & CATEGORY -->
         <span class="card-title-category">
+            <span>{{::detail.job.id}}</span>
             <span class="card-title">{{::detail.job.title}}</span>
             <span class="card-category">{{::detail.job.publishedCategory.name}}</span>
         </span>
